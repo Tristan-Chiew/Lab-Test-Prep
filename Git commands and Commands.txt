@@ -1,0 +1,36 @@
+Git commands / Commands
+
+exit file: cd ..
+enter file: cd <file name>
+make a new file: mkdir <file name>
+
+initialize: git init
+
+login:  git config --global user.name "your name"
+	git config --global user.email "yout email"
+
+check login: git config --list
+
+***(lvl 1)
+status check: git status
+difference: git diff
+stage changes: git add . OR git add * OR git add <file name>
+commit: git commit -m "Description"
+
+
+***(lvl 2)
+list branches: git branch --list
+delete branch: git brance --delete <branch name>
+new branch: git branch "name of branch"
+change branch: git checkout <name of branch>
+merge current branch with 'named' branch: git merge <named branch>
+
+
+***(lvl 3)
+add repo origin to push to: git remote add origin https://github.com/tristan-chiew/tester
+first push (initilze upstream branch):git push --set-upstream origin master
+add submodule: git submodule add git https://github.com/tristan-chiew/submodule-test
+push to repo: git push -u origin
+list of tags: git tag -list
+new tag: git tag –a <tag> –m <comment>
+push tag: git push origin --tags
